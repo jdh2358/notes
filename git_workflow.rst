@@ -30,6 +30,7 @@ After fetching, remove any local tracking branches which no longer
 exist on remote::
 
   > git fetch -p jdh2358
+
 Create a new feature branch and push to remote::
 
   machine1> git checkout master
@@ -72,4 +73,4 @@ On a different machine, set up a tracking branch::
   machine2> git push  # because it is a tracking branch, it pushes to jdh2358/test6
 
 
-Delete local and remote branches::
+
