@@ -73,4 +73,30 @@ On a different machine, set up a tracking branch::
   machine2> git push  # because it is a tracking branch, it pushes to jdh2358/test6
 
 
+Set up an ubuntu box and check out a feature branch for "read only" ::
+
+  # install git to checkout the mpl src code
+  sudo apt-get install git
+
+  # install the pre-reqs to build matplotlib from source
+  sudo apt-get build-dep python-matplotlib
+
+  # get the latest released branch of matplotlib
+  git clone git://github.com/matplotlib/matplotlib.git matplotlib.git
+
+  # cd into the matplotlib directory and create a branch off of the release branch to test
+  cd matplotlib.git
+  git checkout -b mdboom-pixel_marker origin/v1.1.x
+
+  # pull in Michael's changes
+  git pull git://github.com/mdboom/matplotlib.git pixel_marker
+
+  # build the matplotlib source code
+  python setup.py build
+
+  # install it
+  sudo python setup.py install
+
+
+
 
