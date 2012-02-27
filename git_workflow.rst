@@ -45,7 +45,8 @@ Create a new feature branch and push to remote::
   [test6 8f73796] playing with remotes and branches
    1 files changed, 27 insertions(+), 0 deletions(-)
    create mode 100644 test.dat
-  machine1> git push jdh2358 test6Counting objects: 4, done.
+  machine1> git push jdh2358 test6
+  Counting objects: 4, done.
   Delta compression using up to 4 threads.
   Compressing objects: 100% (3/3), done.
   Writing objects: 100% (3/3), 464 bytes, done.
